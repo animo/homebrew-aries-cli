@@ -5,12 +5,12 @@ class AriesCli < Formula
 
   if OS.mac? && Hardware::CPU.intel?
     url "https://github.com/animo/aries-cli/releases/download/0.1.0/aries-cli-macos-arm https://github.com/animo/aries-cli/releases/download/0.1.0/aries-cli-macos-x86_64"
-    sha256 "1265fe662b6d79787192735d22a6e946abdfccc58e1c939cb147ec30c3a8d6a6"
+    sha256 "ce406008b7cb6076253b842a29de7384f6aa254303c44619931d6fdf8c319844"
   end
 
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/animo/aries-cli/releases/download/0.1.0/aries-cli-macos-arm https://github.com/animo/aries-cli/releases/download/0.1.0/aries-cli-macos-x86_64"
-    sha256 "1265fe662b6d79787192735d22a6e946abdfccc58e1c939cb147ec30c3a8d6a6"
+    sha256 "ce406008b7cb6076253b842a29de7384f6aa254303c44619931d6fdf8c319844"
   end
  
   def install
