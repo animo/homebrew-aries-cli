@@ -4,13 +4,13 @@ class AriesCli < Formula
   license "MIT"
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/animo/aries-cli/releases/download/v0.1.0/apple-arm-aries-cli"
-    sha256 "f9352a0d7f0bfd2efa338b93fa775c1483e419ff4d4ad058f03252163224a47f"
+    url "https://github.com/animo/aries-cli/releases/download/v0.1.0/apple-x86_64-aries-cli"
+    sha256 "-"
   end
 
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/animo/aries-cli/releases/download/v0.1.0/apple-arm-aries-cli"
-    sha256 "f9352a0d7f0bfd2efa338b93fa775c1483e419ff4d4ad058f03252163224a47f"
+    sha256 "5f26b9505c1d404afcc683a5c004050dae556dcff6fa83c28c406f3a96a2737e"
   end
  
   def install
