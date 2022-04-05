@@ -15,10 +15,10 @@ class AriesCli < Formula
  
   def install
     if OS.mac? && Hardware::CPU.arm?
-      bin.install "apple-arm-aries-cli" => "aries-cli"
+      bin.install "aries-cli-macos-arm" => "aries-cli"
     end
     if OS.mac? && Hardware::CPU.intel?
-      bin.install "apple-x86_64-aries-cli" => "aries-cli"
+      bin.install "aries-cli-macos-x86_64" => "aries-cli"
     end
   end
 
