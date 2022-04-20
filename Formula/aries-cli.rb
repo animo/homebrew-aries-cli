@@ -4,6 +4,7 @@ class AriesCli < Formula
   license "MIT"
 
   if OS.mac? && Hardware::CPU.intel?
+<<<<<<< HEAD
     url "https://github.com/animo/aries-cli/releases/download/0.1.0/aries-cli-macos-x86_64"
     sha256 "5d18f4d520be1765403621bed0f5bd880fe264100256e7487d423f662019ca64"
   end
@@ -11,14 +12,23 @@ class AriesCli < Formula
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/animo/aries-cli/releases/download/0.1.0/aries-cli-macos-arm"
     sha256 "c9021b03713a990c81b6b37a3af4ab10b632bb294addd3b343a43c4abdd46329"
+=======
+    url "https://github.com/animo/aries-cli/releases/download/v0.1.0/apple-x86_64-aries-cli"
+    sha256 "83ed04127f727c511353c0679bc9084622cb377a6520e2905cc440d4426c81c4"
+  end
+
+  if OS.mac? && Hardware::CPU.arm?
+    url "https://github.com/animo/aries-cli/releases/download/v0.1.0/apple-arm-aries-cli"
+    sha256 "f3476a514c7d068b17fa769af84c62ce97a46b7cfa30a53ecb0d9b4f17fc6728"
+>>>>>>> 84695e8f36457953bb4c96ffa05e9c897588646e
   end
  
   def install
     if OS.mac? && Hardware::CPU.arm?
-      bin.install "aries-cli-macos-arm" => "aries-cli"
+      bin.install "apple-arm-aries-cli" => "aries-cli"
     end
     if OS.mac? && Hardware::CPU.intel?
-      bin.install "aries-cli-macos-x86_64" => "aries-cli"
+      bin.install "apple-x86_64-aries-cli" => "aries-cli"
     end
   end
 
