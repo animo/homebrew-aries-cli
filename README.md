@@ -7,6 +7,6 @@ Repo for homebrew release of agent-cli
 ### Making sure the environment is set
 
 ```
-brew tap animo/homebrew-agent-cli
+brew tap animo/agent-cli
 brew install agent-cli
 ```
