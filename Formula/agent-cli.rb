@@ -4,13 +4,13 @@ class AgentCli < Formula
   license "MIT"
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/animo/agent-cli/releases/download/v0.3.0/apple-x86_64-agent-cli"
-    sha256 "9aee541003677d70ae73c9857fe170ec64da153596f375a346a30f68c471fbf7"
+    url "https://github.com/animo/agent-cli/releases/download/v0.3.1/apple-x86_64-agent-cli"
+    sha256 "ec38a073534f31f43887c063e7f2e3bad52a064dc5ef023442b8a29f08efc5f7"
   end
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/animo/agent-cli/releases/download/v0.3.0/apple-arm-agent-cli"
-    sha256 "3684e2aeb876bdaeae768367bef4e4f5da1dbd4664df17d310454b2e79687a48"
+    url "https://github.com/animo/agent-cli/releases/download/v0.3.1/apple-arm-agent-cli"
+    sha256 "a20fe47ff89ccdaa1f9a0c9e756cc24b0c6fdeef1caed4fa932c2db0a552ca18"
   end
  
   def install
