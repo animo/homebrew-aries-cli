@@ -1,28 +1,28 @@
-class AgentCli < Formula
+class Siera < Formula
   desc "A CLI tool for aries written in Rust"
-  homepage "agent-cli.animo.id"
+  homepage "siera.animo.id"
   license "MIT"
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/animo/agent-cli/releases/download/v0.2.0/apple-x86_64-agent-cli"
+    url "https://github.com/animo/siera/releases/download/v0.1.0/apple-x86_64-siera"
     sha256 "fbe7f470662c9281ecac938e5e7aed5548d28fa26b6de7e81145fbc4c911d9e2"
   end
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/animo/agent-cli/releases/download/v0.2.0/apple-arm-agent-cli"
+    url "https://github.com/animo/siera/releases/download/v0.1.0/apple-arm-siera"
     sha256 "156e1ea199cc77da27fe97b61431fdeea40f46e93f07348f6cb746c554d73a89"
   end
  
   def install
     if OS.mac? && Hardware::CPU.arm?
-      bin.install "apple-arm-agent-cli" => "agent-cli"
+      bin.install "apple-arm-siera" => "siera"
     end
     if OS.mac? && Hardware::CPU.intel?
-      bin.install "apple-x86_64-agent-cli" => "agent-cli"
+      bin.install "apple-x86_64-siera" => "siera"
     end
   end
 
   test do
-    system "agent-cli --version"
+    system "siera --version"
   end
 end
