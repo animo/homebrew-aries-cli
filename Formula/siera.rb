@@ -5,12 +5,12 @@ class Siera < Formula
 
   if OS.mac? && Hardware::CPU.intel?
     url "https://github.com/animo/siera/releases/download/v0.1.0/apple-x86_64-siera"
-    sha256 "ec38a073534f31f43887c063e7f2e3bad52a064dc5ef023442b8a29f08efc5f7"
+    sha256 "3a95f874a8c343dcd46eff3881afd812f6b55ef39d7a57889f43cb3f7e8a69f8"
   end
 
   if OS.mac? && Hardware::CPU.arm?
     url "https://github.com/animo/siera/releases/download/v0.1.0/apple-arm-siera"
-    sha256 "a20fe47ff89ccdaa1f9a0c9e756cc24b0c6fdeef1caed4fa932c2db0a552ca18"
+    sha256 "6bcf597d2b76cdc504c67f4d96a020b99fee36b73b2d5c4dd56511c33a7a9603"
   end
  
   def install
