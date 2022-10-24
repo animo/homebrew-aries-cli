@@ -8,5 +8,5 @@ Repo for homebrew release of siera
 
 ```
 brew tap animo/siera
-brew install siera
+brew install animo/siera/siera
 ```
