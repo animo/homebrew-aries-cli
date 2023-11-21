@@ -4,13 +4,13 @@ class Siera < Formula
   license "MIT"
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/animo/siera-cli/releases/download/v0.1.0/apple-x86_64-siera"
-    sha256 "3a95f874a8c343dcd46eff3881afd812f6b55ef39d7a57889f43cb3f7e8a69f8"
+    url "https://github.com/animo/siera-cli/releases/download/v0.2.0/apple-x86_64-siera"
+    sha256 "aa6e81d540a422e1ee8966668913ff7da9785fcf63a2bc2b7786b9fbe075f14e"
   end
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/animo/siera-cli/releases/download/v0.1.0/apple-arm-siera"
-    sha256 "6bcf597d2b76cdc504c67f4d96a020b99fee36b73b2d5c4dd56511c33a7a9603"
+    url "https://github.com/animo/siera-cli/releases/download/v0.2.0/apple-arm-siera"
+    sha256 "b611865d1ad86263a4c52069fdfbd6bee386f2a8519d2f1dd89eaba25c8e1849"
   end
  
   def install
